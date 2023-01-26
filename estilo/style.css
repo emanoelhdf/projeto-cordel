@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family= Passion+One & display = swap');
+
+@import url('https://fonts.googleapis.com/css2?family= Sriracha & display = swap');
+
+:root { /*variaveis*/
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+
+* { /*configuração geral*/
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px; /*espaço de cima*/
+    font-variant: small-caps; /*transforma em maisculo*/
+    font-family: var(--fonte2);
+    font-size: 10vw; /*tamanho 10 por cento da largura*/
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh; /*10 por cento da altura da tela*/
+    padding-bottom: 10vh; 
+    line-height: 2em; /*espaçamento das linhas*/
+    padding-left: 30px; /*espaçamento da esquerda pra direita*/
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em; /*espaçamento entre as sections*/
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473); /*sombra interna*/
+    background-attachment: fixed; /*iamgem fixa no fundo*/
+}
+
+section.imagem > p {
+    display: inline-block; /*caixa que se adpata ao tamanho do conteudo*/
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black; /*sombra do texto*/
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
